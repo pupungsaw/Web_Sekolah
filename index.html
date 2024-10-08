@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>SMK Citra Negara</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="header">
+        <img alt="School Logo" src="asset/Picsart_24-05-13_13-31-30-517.png" />
+        <div class="title">
+            <h1>SMK CITRA NEGARA</h1>
+            <p>MUTU-AMANAH-NYAMAN-TAQWA-AKTIF-PROFESIONAL</p>
+        </div>
+        <div class="logos">
+            <img alt="Logo 1" src="asset/SMK Bisa V1.png" />
+            <img alt="Logo 2" src="asset/PPLG.png" />
+            <img alt="Logo 3" src="asset/MPLB.png" />
+            <img alt="Logo 4" src="asset/PEMASARAN.png" />
+            <img alt="Logo 5" src="asset/opsi 3.png" />
+            <img alt="Logo 6" src="asset/LOGO DKV BARU.png" />
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">DIRECTORY</a></li>
+            <li><a href="#">TENTANG KAMI</a></li>
+            <li><a href="#">VISION &amp; MISION</a></li>
+        </ul>
+    </div>
+
+    <!-- slide gambar kanan kiri -->
+
+    <div class="container">
+        <div class="slide" style="background-image: url('https://placehold.co/1200x600?text=Ayam');" id="slide1"></div>
+        <div class="slide" style="background-image: url('https://placehold.co/1200x600?text=Sapi');" id="slide2"></div>
+        <div class="slide" style="background-image: url('https://placehold.co/1200x600?text=Udang');" id="slide3"></div>
+        <div class="slide" style="background-image: url('https://placehold.co/1200x600?text=Gajah');" id="slide4"></div>
+        <div class="arrow-left" onclick="prevSlide()">
+        < 
+        </div>
+        <div class="arrow-right" onclick="nextSlide()">
+        > 
+        </div>
+       </div>
+
+       <script>
+        let currentSlide = 0;
+             const slides = document.querySelectorAll('.slide');
+     
+             function showSlide(index) {
+                 slides.forEach((slide, i) => {
+                     slide.style.transform = `translateX(${(i - index) * 100}%)`;
+                 });
+             }
+     
+             function nextSlide() {
+                 currentSlide = (currentSlide + 1) % slides.length;
+                 showSlide(currentSlide);
+             }
+     
+             function prevSlide() {
+                 currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                 showSlide(currentSlide);
+             }
+     
+             showSlide(currentSlide);
+       </script>
+
+    <!-- slide gambar kanan kiri -->
+
+    <!-- Tentang kami huulukuruk -->
+
+    <div class="containerkami">
+        <div class="left-section">
+         <div class="image-containerkami">
+          <img alt="A large green building with multiple floors and a courtyard with people gathered." src="https://placehold.co/400x300"/>
+         </div>
+        </div>
+        <div class="right-section">
+         <div class="headerkami">
+          <h1>
+           TENTANG KAMI
+          </h1>
+         </div>
+         <div class="dropdown-containerkami">
+          <div class="dropdown">
+           <span>
+            "Hidup Adalah Karya Seni Menggambar Tanpa Penghapus."
+           </span>
+          </div>
+          <div class="dropdown">
+           <span>
+            "Hidup Kalo Cobaannya Gampang Paling Hadiahnya Tutup Panci."
+           </span>
+          </div>
+          <div class="dropdown">
+           <span>
+            "terkadang manusia lupa sama yg di bawah kalo abis beli paket."
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <!-- Tentang kami huulukuruk -->
+
+
+
+
+</body>
+</html>

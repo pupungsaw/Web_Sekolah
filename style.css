@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b3b1a;
+}
+.header {
+    background-color: #f0f2e9;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header img {
+    height: 60px;
+}
+.header .title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    left: 90;
+    top: 40;
+}
+.header .title h1 {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 24px;
+    position: absolute;
+    bottom: 10;
+}
+.header .title p {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 14px;
+}
+.header .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header .logos img {
+    height: 50px;
+    margin: 5px;
+}
+.nav {
+    background-color: #1b3b1a;
+    padding: 10px 0;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav ul li {
+    margin: 5px;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #f0f2e9;
+    background-color: #4a5d4a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+.nav ul li a:hover {
+    background-color: #3b4d3b;
+}
+
+/* NAVIGASI BAR  */
+
+
+
+
+/* slide gambar kanan kiri */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    z-index: 10;
+}
+.arrow-left {
+    left: 10px;
+}
+.arrow-right {
+    right: 10px;
+}
+
+/* slide gambar kanan kiri */
+
+
+
+
+
+/* Tenatang kami Hulukutuk */
+.containerkami {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.left-section, .right-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.image-containerkami {
+    background-color: #3a5a5a;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.image-containerkami img {
+    width: 100%;
+    border-radius: 15px;
+}
+.dropdown-containerkami {
+    margin-top: 20px;
+}
+.dropdown {
+    background-color: #d3d3d3;
+    color: #000000;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown span {
+    flex-grow: 1;
+    text-align: center;
+}
+.headerkami {
+    background-color: #5a5a5a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerkami h1 {
+    margin: 0;
+    font-size: 24px;
+}
+@media (min-width: 768px) {
+    .containerkami {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .left-section, .right-section {
+        width: 45%;
+        margin-bottom: 0;
+    }
+}
+
+/* Tenatang kami Hulukutuk */
+
+
